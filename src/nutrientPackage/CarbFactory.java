@@ -51,6 +51,7 @@ public class CarbFactory extends Macronutrient{
     public Food generateNutAllergyFood() {
         ArrayList<String> carbChoicesClone = (ArrayList<String>)carbChoices.clone();
         carbChoicesClone.remove("Peanuts");
+        carbChoicesClone.remove("Pistachio");
         Collections.shuffle(carbChoicesClone);
 
         String foodName = carbChoicesClone.get(0);
